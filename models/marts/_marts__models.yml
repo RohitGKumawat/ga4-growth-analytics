@@ -1,0 +1,15 @@
+models:
+  - name: fct_sessions
+    description: One row per session (user_pseudo_id + ga_session_id), with engagement, funnel flags and revenue.
+    columns:
+      - name: session_key
+        data_tests:
+          - unique
+          - not_null
+      - name: device_category
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ["desktop", "mobile", "tablet"]
+              config:
+                severity: warn
