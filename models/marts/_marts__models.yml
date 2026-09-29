@@ -13,3 +13,11 @@ models:
                 values: ["desktop", "mobile", "tablet"]
               config:
                 severity: warn
+  - name: mart_funnel
+    description: Weekly closed product funnel (view item → add to cart → checkout → purchase) by device and channel.
+
+  - name: mart_channel_performance
+    description: Weekly sessions, engagement, conversion and revenue by first-touch medium.
+
+  - name: mart_cohort_retention
+    description: Weekly retention of new users, cohorted by first-visit week and first-touch medium.
