@@ -1,0 +1,10 @@
+models:
+  - name: stg_ga4__events
+    description: One row per GA4 event, with the event_params we need flattened into typed columns.
+    columns:
+      - name: event_name
+        data_tests:
+          - not_null
+      - name: user_pseudo_id
+        data_tests:
+          - not_null
