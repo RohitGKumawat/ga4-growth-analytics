@@ -1,0 +1,20 @@
+name: ga4_growth
+version: "1.0.0"
+config-version: 2
+profile: ga4_growth
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+test-paths: ["tests"]
+
+vars:
+  # Full dataset is 20201101–20210131. Override with --vars for cheap dev runs.
+  start_date: "20201101"
+  end_date: "20210131"
+
+models:
+  ga4_growth:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table

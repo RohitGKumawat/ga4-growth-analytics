@@ -2,3 +2,8 @@ __pycache__/
 .venv/
 CLAUDE.md
 a.py
+target/
+dbt_packages/
+logs/
+venv/
+.user.yml

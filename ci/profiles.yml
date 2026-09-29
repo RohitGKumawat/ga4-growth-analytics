@@ -1,0 +1,10 @@
+# Dummy profile so CI can run `dbt parse` without any Google credentials.
+ga4_growth:
+  target: ci
+  outputs:
+    ci:
+      type: bigquery
+      method: oauth
+      project: ci-placeholder
+      dataset: ci_placeholder
+      location: US
