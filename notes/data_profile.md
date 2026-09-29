@@ -62,3 +62,10 @@ Row	medium	source	users
 10	referral	(data deleted)	3
 11	<Other>	google	1
 12	cpc	<Other>	1
+
+
+-- Sessions in your model, plus a tracking-gap check
+
+Row	sessions	users	engagement_rate	purchasing_sessions	purchases_without_item_view
+1	26331	22847	0.9456154342789868	136	3
+
